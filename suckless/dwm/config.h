@@ -30,7 +30,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+//	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -66,6 +66,7 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ 0, XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl set +10%") },
 	{ 0, XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-") },
+	{ MODKEY,                       XK_s,      spawn,          SHCMD("slock") },
 	{ MODKEY,                      XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                      XK_q,      spawn,          {.v = termcmd } },
 	{ MODKEY,                      XK_b,      spawn,          {.v = firefoxcmd } },
