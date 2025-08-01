@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 #include <X11/XF86keysym.h>
+#include <X11/keysym.h>
 /* appearance */
 static const unsigned int gappx = 10; /* gap pixel between windows */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -69,6 +70,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("slock") },
 	{ MODKEY,                      XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                      XK_q,      spawn,          {.v = termcmd } },
+	{ 0,              XK_Print,   spawn,  SHCMD("flameshot gui") },
 	{ MODKEY,                      XK_b,      spawn,          {.v = firefoxcmd } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
