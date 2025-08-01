@@ -8,6 +8,7 @@ AS MINIMAL AS POSSIBLE WITHOUT LOOKING LIKE SHIT
 yay -S walrs
 sudo pacman -S picom
 sudo pacman -S feh
+sudo paman -S flameshot
 ```
 ``` bash
 feh --bg-fill ~/wallpaper/sekiro.jpg
