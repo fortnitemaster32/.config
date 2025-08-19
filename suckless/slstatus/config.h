@@ -69,4 +69,5 @@ static const struct arg args[] = {
 	{ datetime, "%s",           " %T" },
 	{ battery_perc, "|%s%%",		"BAT0"},
 	{run_command, "|%s", "~/suckless/slstatus/script/brightness.sh"},
+	{vol_perc, "|%s", NULL},
 };

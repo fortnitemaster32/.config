@@ -1,0 +1,10 @@
+--- config.def.h
++++ config.def.h
+@@ -58,6 +58,7 @@ static const char unknown_str[] = "n/a";
+  * uid                 UID of current user             NULL
+  * uptime              system uptime                   NULL
+  * username            username of current user        NULL
++ * alsa_master_vol     ALSA Master device volume       NULL
+  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
+  *                                                     NULL on OpenBSD
+  * wifi_perc           WiFi signal in percent          interface name (wlan0)
