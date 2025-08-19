@@ -9,6 +9,7 @@ yay -S walrs
 sudo pacman -S picom
 sudo pacman -S feh
 sudo paman -S flameshot
+sudo pacman -S pamixer
 ```
 ``` bash
 feh --bg-fill ~/wallpaper/sekiro.jpg
